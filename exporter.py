@@ -27,8 +27,10 @@ def parse_time_spent(timestring):
     hours, minutes = 0, 0
     parts = timestring.split()
     for part in parts:
-        if part.endswith("d"):
-            hours += int(part[:-1])*8
+        if part.endswith("w"):
+            hours += int(part[:-1]) * 40  # 1 week = 5 days = 40 hours
+        elif part.endswith("d"):
+            hours += int(part[:-1]) * 8   # 1 day = 8 hours
         elif part.endswith("h"):
             hours += int(part[:-1])
         elif part.endswith("m"):
