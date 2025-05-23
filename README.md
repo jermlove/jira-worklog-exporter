@@ -86,7 +86,7 @@ The workbook contains:
 ## 📋 Optional: Export Logs for Another User
 To get worklogs for a teammate (if you have permission):
 ```bash
-python main.py --user colleague@example.com --date_range "This Month"
+python main.py --user colleague@example.com --date-range "This Month"
 ```
 
 ## ❓ Troubleshooting
