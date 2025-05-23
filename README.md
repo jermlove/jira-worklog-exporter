@@ -60,7 +60,7 @@ You can use the following presets as the --date_range value:
 
 ## 🖥️ Step 5: Run the Script
 ```bash
-python main.py --user your.email@example.com --date_range "Last Week"
+python main.py --user your.email@example.com --date-range "Last Week"
 ```
 - --user = the Jira user email whose logs you want (typically yourself)
 - --date_range = one of the supported date ranges above
